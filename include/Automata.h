@@ -1,4 +1,5 @@
 // Copyright 2026 KashinGS
+#pragma once
 #include <string>
 #include <vector>
 
