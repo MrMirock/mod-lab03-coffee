@@ -26,7 +26,7 @@ void Automata::on() {
         selectedPrice = 0;
         std::cout << "The vending machine is turned on. Status: WAIT.\n";
     } else {
-        std::cout << "It cannot be turned on: the machine is not in the OFF state.\n";
+        std::cout << "Can't turned on: the machine is ON.\n";
     }
 }
 
@@ -85,7 +85,7 @@ STATES Automata::getState() {
 
 bool Automata::choice(int index) {
     if (state != STATES::ACCEPT) {
-        std::cout << "The choice of a drink is possible only in the ACCEPT state.\n";
+        std::cout << "The choice drink is possible in the ACCEPT.\n";
         return false;
     }
     int idx = index - 1;
@@ -153,7 +153,7 @@ void Automata::cook() {
 
 void Automata::finish() {
     if (state != STATES::COOK) {
-        std::cout << "Delivery is possible only after cooking (COOK condition).\n";
+        std::cout << "Delivery is possible after cooking.\n";
         return;
     }
     std::cout << "Serving the drink. Take your drink.\n";
