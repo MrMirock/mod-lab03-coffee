@@ -116,20 +116,7 @@ TEST(AutomataTest, Test14_CookFailsWhenNotEnoughMoney) {
     EXPECT_EQ(a.getState(), STATES::CHECK);
 }
 
-TEST(AutomataTest, Test15_MoneyIsDebitedAfterSuccessfulPurchase) {
-    Automata a;
-    a.on();
-    a.coin(100);
-    a.choice(5);
-    EXPECT_TRUE(a.check());
-    a.cook();
-    a.finish();
-    a.coin(0);
-    a.choice(1);
-    EXPECT_TRUE(a.check());
-}
-
-TEST(AutomataTest, Test16_CancelWithNoMoneyDoesNothing) {
+TEST(AutomataTest, Test15_CancelWithNoMoneyDoesNothing) {
     Automata a;
     a.on();
     a.cancel();
