@@ -1,7 +1,4 @@
 // Copyright 2026 KashinGS
-#ifndef INCLUDE_AUTOMATA_H__
-#define INCLUDE_AUTOMATA_H__
-
 #include <string>
 #include <vector>
 
@@ -35,5 +32,3 @@ class Automata {
     void cook();
     void finish();
 };
-
-#endif  // INCLUDE_AUTOMATA_H__
