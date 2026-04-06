@@ -1,17 +1,19 @@
+// Copyright 2026 KashinGS
+#ifndef INCLUDE_AUTOMATA_H
+#define INCLUDE_AUTOMATA_H
+
 #include <string>
 #include <vector>
 
-enum class STATES 
-{
+enum class STATES {
     OFF,
-    WAIT, 
+    WAIT,
     ACCEPT,
     CHECK,
     COOK
 };
 
-class Automata 
-{
+class Automata {
 private:
     int cash;
     std::vector<std::string> menu;
@@ -33,3 +35,5 @@ public:
     void cook();
     void finish();
 };
+
+#endif
