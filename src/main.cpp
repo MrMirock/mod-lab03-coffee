@@ -1,4 +1,5 @@
-﻿#include "Automata.h"
+// Copyright 2026 KashinGS
+#include "Automata.h"
 #include <iostream>
 
 int main() {
@@ -8,16 +9,10 @@ int main() {
     std::cout << machine.getMenu();
     machine.coin(30);
     machine.coin(20);
-    if (machine.choice(2)) {
-        std::cout << "Состояние после choice: " << static_cast<int>(machine.getState()) << "\n";
-        if (machine.check()) {
-            machine.cook();
-            machine.finish();
-        }
-        else {
-            machine.cancel();
-        }
-    }
+    machine.choice(2);
+    machine.check();
+    machine.cook();
+    machine.finish();
     machine.coin(40);
     machine.choice(1);
     machine.check();
