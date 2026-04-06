@@ -1,6 +1,7 @@
 // Copyright 2026 KashinGS
 #include "Automata.h"
 #include <iostream>
+#include <string>
 #include <thread>
 #include <chrono>
 
