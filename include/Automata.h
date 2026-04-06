@@ -1,4 +1,4 @@
-// Copyright 2026 KashinGS
+// Copyright 2025 Student
 #ifndef INCLUDE_AUTOMATA_H
 #define INCLUDE_AUTOMATA_H
 
@@ -14,14 +14,14 @@ enum class STATES {
 };
 
 class Automata {
-private:
+ private:
     int cash;
     std::vector<std::string> menu;
     std::vector<int> prices;
     STATES state;
     int selectedPrice;
 
-public:
+ public:
     Automata();
 
     void on();
@@ -36,4 +36,4 @@ public:
     void finish();
 };
 
-#endif
+#endif  // INCLUDE_AUTOMATA_H
