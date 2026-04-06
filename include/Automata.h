@@ -1,6 +1,6 @@
-// Copyright 2025 Student
-#ifndef INCLUDE_AUTOMATA_H
-#define INCLUDE_AUTOMATA_H
+// Copyright 2026 KashinGS
+#ifndef INCLUDE_AUTOMATA_H__
+#define INCLUDE_AUTOMATA_H__
 
 #include <string>
 #include <vector>
@@ -36,4 +36,4 @@ class Automata {
     void finish();
 };
 
-#endif  // INCLUDE_AUTOMATA_H
+#endif  // INCLUDE_AUTOMATA_H__
